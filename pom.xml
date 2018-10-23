@@ -28,7 +28,8 @@
   <description>Spring Boot - HTTP Booster</description>
   <properties>
     <spring-boot-bom.version>1.5.15.Final-redhat-00002</spring-boot-bom.version>
-    <spring-boot.version>1.5.15.RELEASE</spring-boot.version>
+   <!-- <spring-boot.version>1.5.15.RELEASE</spring-boot.version> -->
+   <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
     <arquillian.version>1.4.0.Final</arquillian.version>
     <awaitility.version>3.1.0</awaitility.version>
     <rest-assured.version>3.1.0</rest-assured.version>
@@ -139,6 +140,27 @@
       <artifactId>assertj-core</artifactId>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+    <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>2.0.1.Final</version>
+    </dependency>
+		<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-data-jpa</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-lang3</artifactId>
+		<version>3.6</version>
+	</dependency>
+    <dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+        <version>5.1.47</version>
+	</dependency>
+   
   </dependencies>
   <build>
     <resources>
